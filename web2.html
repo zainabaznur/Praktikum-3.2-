@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Barang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="product-container">
+        <img src="asset/prod.jpg" alt="Product" class="product-image">
+    </div>
+
+    <div class="container">
+        <table class="header-table">
+            <tr>
+                <th>Home</th>
+                <th>Generate Link</th>
+                <th>Transaction History</th>
+                <th>Policy</th>
+                <th>Logout</th>
+            </tr>
+        </table>
+
+        <div class="form">
+            <div>
+                <label>Title Here:</label>
+                <input type="text" placeholder="Enter title">
+            </div>
+            <div>
+                <label>Description:</label>
+                <textarea placeholder="Enter description"></textarea>
+            </div>
+            <div>
+                <label>Account Number:</label>
+                <input type="text" placeholder="Enter account number">
+            </div>
+            <div>
+                <label>Bank:</label>
+                <select>
+                    <option value="bca">BCA</option>
+                    <option value="mandiri">Mandiri</option>
+                </select>
+            </div>
+            <div>
+                <label>Account Holder:</label>
+                <input type="text" placeholder="Name Here">
+            </div>
+            <div>
+                <label>Transaction:</label>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <p>* if transaction is for 3 person, choose 3 from the dropdown list</p>
+            </div>
+            <div>
+                <input type="checkbox" id="sendToMobile">
+                <label for="sendToMobile">Send to Mobile Phone</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sendToEmail">
+                <label for="sendToEmail">Send to Email</label>
+            </div>
+            <div>
+                <label>Send to Mobile Phone:</label>
+                <input type="text" placeholder="Enter mobile number">
+            </div>
+            <div>
+                <label>Send to Email:</label>
+                <input type="email" placeholder="Enter email address">
+            </div>
+        </div>
+
+        <button>Generate Nabr Link</button>
+    </div>
+
+</body>
+</html>
